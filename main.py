@@ -12,6 +12,7 @@ def main():
     print(f"Your alarm is set for {hour:02d}:{minute:02d}.")
     
     clock.check_alarm()
+    clock.play_alarm()
 
 if __name__ == "__main__":
     main()

@@ -1,5 +1,4 @@
 from datetime import datetime
-from alarm import Alarm  
 import time
 import os
 
@@ -12,11 +11,10 @@ class Clock:
             current_time = datetime.now()
             if current_time.hour == self.alarm.hour and current_time.minute == self.alarm.minute:
                 print("Time to wake up!")
-                self.play_alarm()
                 break
             else: 
                 print("Monitoring.....")
-                time.sleep(15) 
+                time.sleep(15)
 
     def play_alarm(self):
         for _ in range(3):
